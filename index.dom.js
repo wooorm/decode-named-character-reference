@@ -1,14 +1,19 @@
 /// <reference lib="dom" />
 
-/* eslint-env browser */
-
-const element = document.createElement('i')
+/**
+ * @type {HTMLElement | null}
+ */
+let element = null
 
 /**
  * @param {string} value
  * @returns {string|false}
  */
 export function decodeNamedCharacterReference(value) {
+  if (!element) {
+    element = document.createElement('i')
+  }
+
   const characterReference = '&' + value + ';'
   element.innerHTML = characterReference
   const char = element.textContent
