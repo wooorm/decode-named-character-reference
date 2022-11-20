@@ -1,9 +1,8 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {decodeNamedCharacterReference} from './index.js'
 
-test('decodeNamedCharacterReference(value)', function (t) {
-  t.equal(decodeNamedCharacterReference('amp'), '&', 'works')
-  t.equal(decodeNamedCharacterReference('asdasdasd'), false, 'works')
-
-  t.end()
+test('decodeNamedCharacterReference(value)', function () {
+  assert.equal(decodeNamedCharacterReference('amp'), '&', 'works')
+  assert.equal(decodeNamedCharacterReference('asdasdasd'), false, 'works')
 })
