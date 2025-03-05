@@ -2,13 +2,13 @@
 
 /* eslint-env browser */
 
-const element = document.createElement('i')
-
+let element
 /**
  * @param {string} value
  * @returns {string|false}
  */
 export function decodeNamedCharacterReference(value) {
+  element = element || document.createElement('i')
   const characterReference = '&' + value + ';'
   element.innerHTML = characterReference
   const char = element.textContent
