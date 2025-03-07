@@ -24,10 +24,12 @@
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
-    "index.js",
+    "index.d.ts.map",
     "index.d.ts",
+    "index.dom.d.ts.map",
+    "index.dom.d.ts",
     "index.dom.js",
-    "index.dom.d.ts"
+    "index.js"
   ],
   "exports": {
     ".": {
