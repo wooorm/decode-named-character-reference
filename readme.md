@@ -9,18 +9,18 @@ Decode named character references.
 
 ## Contents
 
-*   [What is this?](#what-is-this)
-*   [When should I use this?](#when-should-i-use-this)
-*   [Install](#install)
-*   [Use](#use)
-*   [API](#api)
-    *   [`decodeNamedCharacterReference(value)`](#decodenamedcharacterreferencevalue)
-*   [Types](#types)
-*   [Compatibility](#compatibility)
-*   [Security](#security)
-*   [Related](#related)
-*   [Contribute](#contribute)
-*   [License](#license)
+* [What is this?](#what-is-this)
+* [When should I use this?](#when-should-i-use-this)
+* [Install](#install)
+* [Use](#use)
+* [API](#api)
+  * [`decodeNamedCharacterReference(value)`](#decodenamedcharacterreferencevalue)
+* [Types](#types)
+* [Compatibility](#compatibility)
+* [Security](#security)
+* [Related](#related)
+* [Contribute](#contribute)
+* [License](#license)
 
 ## What is this?
 
@@ -89,8 +89,8 @@ This package is safe.
 
 ## Related
 
-*   [`parse-entities`][parse-entities]
-    — parse (decode) HTML character references
+* [`parse-entities`][parse-entities]
+  — parse (decode) HTML character references
 
 ## Contribute
 
@@ -103,34 +103,34 @@ See [How to Contribute to Open Source][contribute].
 
 <!-- Definitions -->
 
-[build-badge]: https://github.com/wooorm/decode-named-character-reference/workflows/main/badge.svg
+[author]: https://wooorm.com
 
 [build]: https://github.com/wooorm/decode-named-character-reference/actions
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/decode-named-character-reference.svg
+[build-badge]: https://github.com/wooorm/decode-named-character-reference/workflows/main/badge.svg
+
+[contribute]: https://opensource.guide/how-to-contribute/
 
 [coverage]: https://codecov.io/github/wooorm/decode-named-character-reference
 
-[downloads-badge]: https://img.shields.io/npm/dm/decode-named-character-reference.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/decode-named-character-reference.svg
 
 [downloads]: https://www.npmjs.com/package/decode-named-character-reference
 
-[size-badge]: https://img.shields.io/bundlephobia/minzip/decode-named-character-reference.svg
+[downloads-badge]: https://img.shields.io/npm/dm/decode-named-character-reference.svg
 
-[size]: https://bundlephobia.com/result?p=decode-named-character-reference
-
-[npm]: https://docs.npmjs.com/cli/install
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
 
 [esmsh]: https://esm.sh
 
 [license]: license
 
-[author]: https://wooorm.com
-
-[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
-
-[typescript]: https://www.typescriptlang.org
-
-[contribute]: https://opensource.guide/how-to-contribute/
+[npm]: https://docs.npmjs.com/cli/install
 
 [parse-entities]: https://github.com/wooorm/parse-entities
+
+[size]: https://bundlephobia.com/result?p=decode-named-character-reference
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/decode-named-character-reference.svg
+
+[typescript]: https://www.typescriptlang.org
