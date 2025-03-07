@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import {decodeNamedCharacterReference} from './index.js'
+import {decodeNamedCharacterReference} from 'decode-named-character-reference'
 
 test('decodeNamedCharacterReference(value)', function () {
   assert.equal(decodeNamedCharacterReference('amp'), '&', 'works')
