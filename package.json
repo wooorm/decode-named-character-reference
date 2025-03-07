@@ -36,6 +36,7 @@
       "deno": "./index.js",
       "react-native": "./index.js",
       "worker": "./index.js",
+      "edge-light": "./index.js",
       "browser": "./index.dom.js",
       "default": "./index.js"
     }
