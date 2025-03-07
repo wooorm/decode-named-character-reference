@@ -1,49 +1,13 @@
 {
-  "name": "decode-named-character-reference",
-  "version": "1.0.2",
-  "description": "Decode named character references",
-  "license": "MIT",
-  "keywords": [
-    "decode",
-    "named",
-    "character",
-    "references"
-  ],
-  "repository": "wooorm/decode-named-character-reference",
-  "bugs": "https://github.com/wooorm/decode-named-character-reference/issues",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/wooorm"
-  },
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "bugs": "https://github.com/wooorm/decode-named-character-reference/issues",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
-  "sideEffects": false,
-  "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "files": [
-    "index.d.ts.map",
-    "index.d.ts",
-    "index.dom.d.ts.map",
-    "index.dom.d.ts",
-    "index.dom.js",
-    "index.js"
-  ],
-  "exports": {
-    ".": {
-      "deno": "./index.js",
-      "react-native": "./index.js",
-      "worker": "./index.js",
-      "edge-light": "./index.js",
-      "browser": "./index.dom.js",
-      "default": "./index.js"
-    }
-  },
   "dependencies": {
     "character-entities": "^2.0.0"
   },
+  "description": "Decode named character references",
   "devDependencies": {
     "@types/node": "^22.0.0",
     "c8": "^10.0.0",
@@ -54,37 +18,70 @@
     "typescript": "^5.0.0",
     "xo": "^0.60.0"
   },
-  "scripts": {
-    "prepack": "npm run build && npm run format",
-    "build": "tsc --build --clean && tsc --build && type-coverage",
-    "format": "remark . -qfo && prettier . -w --log-level warn && xo --fix",
-    "test-api": "node --conditions development test.js",
-    "test-coverage": "c8 --check-coverage --100 --reporter lcov npm run test-api",
-    "test": "npm run build && npm run format && npm run test-coverage"
+  "exports": {
+    "deno": "./index.js",
+    "edge-light": "./index.js",
+    "react-native": "./index.js",
+    "worker": "./index.js",
+    "browser": "./index.dom.js",
+    "default": "./index.js"
   },
+  "files": [
+    "index.d.ts.map",
+    "index.d.ts",
+    "index.dom.d.ts.map",
+    "index.dom.d.ts",
+    "index.dom.js",
+    "index.js"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/wooorm"
+  },
+  "keywords": [
+    "character",
+    "decode",
+    "named",
+    "references"
+  ],
+  "license": "MIT",
+  "main#": "to do: next major: remove field",
+  "main": "index.js",
+  "name": "decode-named-character-reference",
   "prettier": {
-    "tabWidth": 2,
-    "useTabs": false,
-    "singleQuote": true,
     "bracketSpacing": false,
     "semi": false,
-    "trailingComma": "none"
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false
   },
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-wooorm"
+    ]
+  },
+  "repository": "wooorm/decode-named-character-reference",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build && type-coverage",
+    "format": "remark --frail --output --quiet -- . && prettier --log-level warn --write -- . && xo --fix",
+    "test-api": "node --conditions development test.js",
+    "test-coverage": "c8 --100 --reporter lcov -- npm run test-api",
+    "test": "npm run build && npm run format && npm run test-coverage"
+  },
+  "sideEffects": false,
+  "typeCoverage": {
+    "atLeast": 100,
+    "ignoreCatch": true
+  },
+  "types#": "to do: next major: remove field",
+  "types": "index.d.ts",
+  "type": "module",
+  "version": "1.0.2",
   "xo": {
     "prettier": true,
     "rules": {
       "unicorn/prefer-code-point": "off"
     }
-  },
-  "remarkConfig": {
-    "plugins": [
-      "preset-wooorm"
-    ]
-  },
-  "typeCoverage": {
-    "atLeast": 100,
-    "detail": true,
-    "strict": true,
-    "ignoreCatch": true
   }
 }
