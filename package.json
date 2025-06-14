@@ -23,6 +23,7 @@
     "edge-light": "./index.js",
     "react-native": "./index.js",
     "worker": "./index.js",
+    "workerd": "./index.js",
     "browser": "./index.dom.js",
     "default": "./index.js"
   },
