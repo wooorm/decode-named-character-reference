@@ -20,6 +20,7 @@
   },
   "exports": {
     "deno": "./index.js",
+    "workerd": "./index.js",
     "edge-light": "./index.js",
     "react-native": "./index.js",
     "worker": "./index.js",
