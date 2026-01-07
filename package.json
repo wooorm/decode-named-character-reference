@@ -19,8 +19,8 @@
     "xo": "^1.0.0"
   },
   "exports": {
-    "deno": "./index.js",
     "convex": "./index.js",
+    "deno": "./index.js",
     "edge-light": "./index.js",
     "react-native": "./index.js",
     "worker": "./index.js",
