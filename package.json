@@ -19,6 +19,7 @@
     "xo": "^1.0.0"
   },
   "exports": {
+    "convex": "./index.js",
     "deno": "./index.js",
     "edge-light": "./index.js",
     "react-native": "./index.js",
